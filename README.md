@@ -47,27 +47,27 @@ This project can handle inputs with numbers, letters, spaces, special characters
 - Each character has a height of 8 lines.
 - Characters are separated by a new line `\n`.
 ## Funtionality
-### `ReadAsciiFromFile`
+### [`ReadAsciiFromFile`](https://github.com/Dudimath/ascii_art/blob/main/readasciifromfile.go)
 
 Reads ASCII art from a file specified by filename.
 Returns a 2D slice representing the ASCII art.
 
-### `PrintWord`
+### [`PrintWord`](https://github.com/Dudimath/ascii_art/blob/main/printword.go)
 
 Prints a single word using ASCII art, based on the provided asciiMap.
 Returns an error if the ASCII map is invalid or if the word contains characters that are out of range.
 
-### `PrintArt`
+### [`PrintArt`](https://github.com/Dudimath/ascii_art/blob/main/displayart.go)
 
 Prints a string using ASCII art, where words are separated by spaces and lines are separated by \n.
 Uses PrintWord to print individual words.
 Returns an error if encountered during printing.
 
-### `HandleLn`
+### [`HandleLn`](https://github.com/Dudimath/ascii_art/blob/main/displayart.go)
 Checks if a string consists of only newline characters.
 Returns true if the string contains only newline characters, false otherwise.
 
-### `main()`
+### [`main()`](https://github.com/Dudimath/ascii_art/blob/main/programme/main.go)
 Parses command-line flags -shadow and -thinkertoy to determine which ASCII art file to use.
 Reads the input string and replaces \n with newline characters.
 Prints the ASCII art based on the input string and chosen ASCII art file.
